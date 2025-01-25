@@ -4,6 +4,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import CustomPreset from '@/theme/theme.ts'
+import Tooltip from 'primevue/tooltip';
 
 const app = createApp(App)
 
@@ -19,4 +20,6 @@ app.use(PrimeVue, {
 	}
 })
 
+
+app.directive('tooltip', Tooltip);
 app.mount('#app')
