@@ -5,6 +5,7 @@ import App from './App.vue'
 import router from './router'
 import CustomPreset from '@/theme/theme.ts'
 import Tooltip from 'primevue/tooltip';
+import { MotionComponent, MotionPlugin } from '@vueuse/motion'
 
 const app = createApp(App)
 
@@ -22,4 +23,8 @@ app.use(PrimeVue, {
 
 
 app.directive('tooltip', Tooltip);
+app.use(MotionPlugin, {
+  directives: {
+  }
+});
 app.mount('#app')

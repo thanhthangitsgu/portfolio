@@ -22,5 +22,5 @@ defineExpose({
 </template>
 
 <style scoped lang="scss">
-@import "header-layout";
+@use "header-layout";
 </style>

@@ -8,5 +8,7 @@
       "path": "./tsconfig.app.json"
     }
   ],
-  "types": ["element-plus/global"]
+  "compilerOptions": {
+    "types": ["element-plus/global"]
+  }
 }

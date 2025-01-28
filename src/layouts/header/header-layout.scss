@@ -1,6 +1,6 @@
-@import "tailwindcss";
-@import "tailwindcss/theme.css";
-@import "../../assets/sass/_custom_variables";
+@use "tailwindcss";
+@use "tailwindcss/theme.css";
+@use "../../assets/sass/_custom_variables";
 
 .header-menu {
   &-item {
