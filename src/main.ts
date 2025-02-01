@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router'
 import CustomPreset from '@/theme/theme.ts'
 import Tooltip from 'primevue/tooltip';
-import { MotionComponent, MotionPlugin } from '@vueuse/motion'
+import { MotionPlugin } from '@vueuse/motion'
 
 const app = createApp(App)
 
