@@ -7,14 +7,14 @@ defineExpose({
 </script>
 
 <template>
-	<header class="app-header flex p-6 px-30 justify-between items-center">
+	<header class="app-header bg-white flex p-6 px-30 justify-between items-center sticky top-0">
 		<div>
 			<img src="../../assets/logo/logo.svg" alt="logo" class="w-50">
 		</div>
 		<div class="flex gap-x-12 header-menu">
 			<div v-for="title of menuTitles"
            v-bind:key="title"
-           class="title px-2 mx-2 cursor-pointer header-menu-item">
+           class="title px-2 mx-2 cursor-pointer header-menu-item font-normal">
         {{title}}
       </div>
 		</div>
