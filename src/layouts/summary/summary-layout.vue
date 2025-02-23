@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { lang } from '@/utils/I18nHelper.ts'
+
 </script>
 
 <template>
@@ -10,11 +12,11 @@
 
       <div class="text-center">
         <div class="text-4xl font-semibold text-sky-600 mt-5">
-          Welcome to my portfolio,
+          {{lang('header_welcome')}},
         </div>
-        <div class="font-bold text-6xl text-gray-800 mt-5">Phan Thanh Thang</div>
-        <div class="text-2xl text-gray-800 mt-5">Hi, I am a Software Engineer</div>
-        <button class="btn-animation-color mt-5">View Projects</button>
+        <div class="font-bold text-6xl text-gray-800 mt-5">{{ lang('personal_name') }}</div>
+        <div class="text-2xl text-gray-800 mt-5">{{ lang('personal_title') }}</div>
+        <button class="btn-animation-color mt-5">{{ lang('button_view_project') }}</button>
       </div>
     </div>
   </div>

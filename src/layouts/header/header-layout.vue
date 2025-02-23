@@ -1,9 +1,21 @@
 <script setup lang="ts">
-const menuTitles: string[] = ['Home', 'About', 'Skills', 'Projects', 'Contact']
+import { menuTitles } from '@/utils/constants/menu-title.ts'
+import { useI18n } from 'vue-i18n'
+import { lang } from '@/utils/I18nHelper.ts'
+import { ref, watch } from 'vue'
 
-defineExpose({
-	menuTitles
+const {locale} = useI18n();
+const langs: {name: string, icon: string}[] = [
+  {name : "VI", icon: 'vietnam-flag.png'},
+  {name : "EN", icon: "en-flag.png"}
+]
+
+const selectedLang = ref(langs[1])
+watch(selectedLang, (newValue, oldValue) => {
+  locale.value = newValue.name.toLowerCase();
 })
+
+
 </script>
 
 <template>
@@ -11,13 +23,30 @@ defineExpose({
 		<div>
 			<img src="../../assets/logo/logo.svg" alt="logo" class="w-50">
 		</div>
-		<div class="flex gap-x-12 header-menu">
+		<div class="flex gap-x-12 header-menu grow justify-end me-4">
 			<div v-for="title of menuTitles"
            v-bind:key="title"
            class="title px-2 mx-2 cursor-pointer header-menu-item font-normal">
-        {{title}}
+        {{lang(title)}}
       </div>
 		</div>
+    <div>
+      <Select :options="langs" optionLabel="name" size="small" style="width: 100px" v-model="selectedLang">
+        <template #value="slotProps">
+          <div class="flex items-center">
+            <img :src="'src/assets/images/icon/' + selectedLang.icon" style="width: 25px">
+            <div class="ms-1">{{ selectedLang.name }}</div>
+          </div>
+        </template>
+
+        <template #option="slotProps">
+          <div class="flex items-center">
+            <img :src="'src/assets/images/icon/' + slotProps.option.icon" style="width: 25px">
+            <div class="ms-1">{{ slotProps.option.name }}</div>
+          </div>
+        </template>
+      </Select>
+    </div>
 	</header>
 </template>
 

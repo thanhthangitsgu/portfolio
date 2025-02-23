@@ -6,9 +6,10 @@ import router from './router'
 import CustomPreset from '@/theme/theme.ts'
 import Tooltip from 'primevue/tooltip';
 import { MotionPlugin } from '@vueuse/motion'
+import { createI18n } from 'vue-i18n'
+import i18n from './i18n.ts'
 
 const app = createApp(App)
-
 app.use(router)
 app.use(PrimeVue, {
 	theme: {
@@ -27,4 +28,5 @@ app.use(MotionPlugin, {
   directives: {
   }
 });
+app.use(i18n);
 app.mount('#app')
