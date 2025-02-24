@@ -5,7 +5,7 @@ import SummaryLayout from '@/layouts/summary/summary-layout.vue'
 </script>
 
 <template>
-  <div class="w-screen h-screen background-pattern">
+  <div class="h-screen background-pattern">
     <header-layout/>
     <div class="w-full flex flex-col h-4/5 items-center justify-center">
       <summary-layout/>

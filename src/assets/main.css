@@ -19,6 +19,24 @@ body {
 }
 
 .section-title {
-    font-size: var(--text-2xl);
-    font-weight: var(--font-weight-bold);
+    position: relative;
+
+    .title {
+        text-transform: uppercase;
+        font-size: var(--text-3xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-gray-700)
+    }
+
+    &::after {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -1rem;
+        position: absolute;
+        content: "";
+        height: 4px;
+        width: 100px;
+        background: var(--color-red-700);
+        border-radius: 2rem ;
+    }
 }
