@@ -17,8 +17,8 @@ const messages = {
   },
   vi: {
     personal_name: "Phan Thanh Thắng",
-    personal_title: "Xin chào, tôi là một Kỹ sư Phần mềm",
-    header_welcome: "Chào mừng đến với portfolio của tôi",
+    personal_title: "Xin chào, mình là một Kỹ sư Phần mềm",
+    header_welcome: "Chào mừng đến với portfolio của mình",
 
     menu_title_home: "Trang chủ",
     menu_title_about: "Giới thiệu",

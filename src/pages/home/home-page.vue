@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import GreetingLayout from '@/layouts/greeting/greeting-layout.vue'
 import AboutLayout from '@/layouts/about/about-layout.vue'
-import SummaryLayout from '@/layouts/summary/summary-layout.vue'
-import SkillLayout from '@/layouts/skill-layout.vue'
 import ProjectLayout from '@/layouts/project/project-layout.vue'
 </script>
 
@@ -10,7 +8,6 @@ import ProjectLayout from '@/layouts/project/project-layout.vue'
 	<div class="app-container">
     <greeting-layout/>
     <about-layout/>
-    <skill-layout/>
     <project-layout/>
 	</div>
 </template>
