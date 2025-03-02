@@ -1,0 +1,8 @@
+@use "tailwindcss";
+@use "tailwindcss/theme.css";
+@use "../../assets/sass/_custom_variables";
+.p-badge {
+  background-color: var(--color-sky-100);
+  color: var(--color-sky-500);
+  font-weight: var(--font-weight-medium);
+}

@@ -7,7 +7,7 @@ import { lang } from '@/utils/I18nHelper.ts'
   <div class="flex w-full justify-center mt-5 px-30">
     <div class="flex w-full flex-col justify-center items-center">
       <div class="w-50 h-50 object-contain rounded-full overflow-hidden">
-        <img src="../../assets/images/stock-avatar-2.jpg" class="-translate-y-1/5" alt="stock-avatar">
+        <img src="assets/images/stock-avatar-2.jpg" class="-translate-y-1/5" alt="stock-avatar">
       </div>
 
       <div class="text-center">

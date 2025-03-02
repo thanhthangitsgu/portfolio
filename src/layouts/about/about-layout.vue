@@ -9,7 +9,7 @@
       <div class="text-center text-gray-500">Some basic information about me</div>
     </div>
 
-    <div class="mt-15 flex gap-30 text-lg flex justify-center">
+    <div class="mt-15 flex gap-30 text-lg justify-center">
       <div class="w-2/3 text-center text-justify">
         <p>
           I'm Thang, a software engineer with experience in developing web systems, mobile
